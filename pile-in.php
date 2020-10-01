@@ -20,6 +20,6 @@ if ($_GET)
 	$o['GET'] = $_GET;
     
 $str = pile_encode($o);
-$str = iconv("CP1255","UTF-8", $str) . ",";
+$str = iconv("CP1255","UTF-8", $str) . ",\n";
 file_put_contents($fn,$str,FILE_APPEND);
 ?>1
