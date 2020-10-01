@@ -16,7 +16,7 @@ if ($_GET['date'])
 	{
 		if (strtotime($o['date']) > $date)
 		{
-			echo pile_encode($o);
+			echo pile_encode($o).",\n";
 		}
 	}
 }
